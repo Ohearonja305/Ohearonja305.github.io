@@ -1,0 +1,135 @@
+/* Wow try to keep this place organized my god */
+
+/*Big boi tags*/
+html
+{
+  background-color:#AAA;
+  height:100%;
+}
+header
+{
+  width:1000px;
+  padding: 1px 0px 0px 0px;
+  background-color:#5D3FD3;
+  border-radius:20px 20px 0px 0px;
+}
+body
+{
+    max-width: 1000px;
+    width:100%;
+    margin: 10px auto;
+
+    background-color: #EFC050;
+    border-radius:25px;
+    font-family:"sans-sarif";
+    text-align:center;
+    box-shadow: rgba(0, 0, 0, 0.3) 8px 10px 0px;
+}
+article
+{
+  font-size:22px;
+}
+aside
+{
+  font-family:papyrus;
+  font-size:25px;
+}
+input
+{
+    size:20px;
+}
+footer
+{
+    border-top:2px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    margin:10px auto;
+    margin-top:20px;
+    padding-top:10px;
+    size:14px;
+}
+
+/* Targeting Smaller Boi Tags that show up in the Big Boi Tags */
+header h1
+{
+  color:white;
+}
+header h2
+{
+  color:white;
+}
+header p
+{
+  color:white;
+}
+
+/*Smaller Boi Tags*/
+hr
+{
+  width:100%;
+  width:600px;
+}
+a
+{
+  font-size:24px;
+}
+p
+{
+  font-size:20px;
+  height: 20%;
+}
+tr
+{
+  padding-left:200px;
+}
+label
+{
+  font-size:20px;
+}
+
+/*Some class targetting*/
+.button
+{
+    background-color:white;
+    color:black;
+    display:inline-block;
+    padding:10px 8px;
+    margin-top:5px;
+    font-size:20px;
+    text-transform:uppercase;
+    text-decoration:none;
+    text-align:center;
+    border:#222 solid;
+    border-radius: 20px;
+    /* color x y blur */
+    /* red, green, blue from 0-255, alpha 0-1 */
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 0px;
+}
+.button:hover
+{
+    background-color:lightgreen;
+    color:black;
+}
+.mini
+{
+  width:300px;
+}
+.large
+{
+  width:998px;
+}
+.difficulty
+{
+  font-size:20px;
+}
+
+/* And finally, some ID targetting */
+#cat
+{
+  height:200px;
+  width:200px;
+}
+#realAside
+{
+  font-family:sans-serif;
+}

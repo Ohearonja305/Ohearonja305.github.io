@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/advanced.css">
+
+    <style>
+        /* CSS for the Page */
+        html {
+            background-image: url('images/background.png');
+        }
+        div
+        {
+            margin:auto;
+            width: 22.3%;
+            align-self:center;
+            text-align:left;
+            color:white;
+        }
+        label
+        {
+            font-size:25px;
+        }
+        img
+        {
+            width:100px;
+        }
+
+        /* Targetting IDs */
+        #big
+        {
+            width:20px;
+            height:20px;
+        }
+        .button
+        {
+            margin:auto;
+            align-self:center;
+        }
+
+        /* Table CSS (IDK might just wanna keep this on it's own, cause YOU KNOW) */
+        table
+        {
+            margin:auto;
+            height:100px;
+            width:100px;
+            border:0;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        table tr, th
+        {
+            font-size:0px;
+            padding:0;
+            margin:0;
+        }
+
+        /* Tic Tac Toe Table CSS Cause FUCK */
+        #tL
+        {
+            border-left     :2px solid black;
+            border-top      :2px solid black;
+        }
+        #tM
+        {
+            border-left     :2px solid black;
+            border-top      :2px solid black;
+            border-right    :2px solid black;
+        }
+        #tR
+        {
+            border-top      :2px solid black;
+            border-right    :2px solid black;
+        }
+        #mL
+        {
+            border-left     :2px solid black;
+            border-top      :2px solid black;
+            border-bottom   :2px solid black;
+        }
+        #m
+        {
+            border          :2px solid black;
+        }
+        #mR
+        {
+            border-top      :2px solid black;
+            border-bottom   :2px solid black;
+            border-right    :2px solid black;
+        }
+        #bL
+        {
+            border-left     :2px solid black;
+            border-bottom   :2px solid black;
+        }
+        #bM
+        {
+            border-left     :2px solid black;
+            border-right    :2px solid black;
+            border-bottom   :2px solid black;
+        }
+        #bR
+        {
+            border-right    :2px solid black;
+            border-bottom   :2px solid black;
+        }
+    </style>
+
+    <!-- Script -->
+    <script src="javascript/tictactoe.js"></script>
+
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <form id="form" method="post" action="">
+        <header>
+            <h1>Suprise fucker I got bored and made tic tac toe</h1>
+
+            <p>We got a whooping 2 Difficulties to choose from, those being:</p>
+            <!-- Radio Buttons -->
+            <div>
+                <br><input checked  id="regular" type="radio" class="difficulty"  name="difficulty" value="regular" ><label for="regular">Pretty Mid tbh</label>
+                <br><input disabled id="wtf"  type="radio" class="difficulty"  name="difficulty" value="wtf"        ><label for="wtf">What the Fuck</label>
+            </div>
+            <br>
+
+
+            <!-- Menu Buttons -->
+            <input class="button" type="button" id="reset" value="Reset"></th>
+            <input class="button" type="button" id="submit"value="Confirm"></th>
+
+            <p>Good Luck I suppose</p>
+
+            <a class=button href="index.html">Back to Main Page</a>
+
+            <p>
+                Well the code here's pretty fuckin bad  <br>
+                You wanna see?
+                <a href="javascript/tictactoe.js" target="MessOfCode">An Absolute Mess</a>
+            </p>
+            
+            <h1 id="update"></h1>
+
+            <hr class="large" color="black">
+        </header>
+    </form>
+
+
+    <!-- Tic Tac Toe Table -->
+    <table>
+        <tr>
+            <th id="tL">        <img id="topLeft"       src="images/icon.gif" alt="Tic" onclick="topLeft()"></th>
+            <th id="tM">        <img id="topMiddle"     src="images/icon.gif" alt="Tac" onclick="topMiddle()"></th>
+            <th id="tR">        <img id="topRight"      src="images/icon.gif" alt="Toe" onclick="topRight()"></th>
+        </tr>
+        <tr>
+            <th id="mL">        <img id="middleLeft"    src="images/icon.gif" alt="Toe" onclick="middleLeft()"></th>
+            <th id="m">         <img id="middle"        src="images/icon.gif" alt="Tic" onclick="middle()"></th>
+            <th id="mR">        <img id="middleRight"   src="images/icon.gif" alt="Tac" onclick="middleRight()"></th>
+        </tr>
+        <tr>
+            <th id="bL">        <img id="bottomLeft"    src="images/icon.gif" alt="Tac" onclick="bottomLeft()"></th>
+            <th id="bM">        <img id="bottomMiddle"  src="images/icon.gif" alt="Toe" onclick="bottomMiddle()"></th>
+            <th id="bR">        <img id="bottomRight"   src="images/icon.gif" alt="Tic" onclick="bottomRight()"></th>
+        </tr>
+    </table>
+
+
+    <!-- Footer -->
+    <footer>
+        &copy; Fuckin Tic Tac Toe
+    </footer>
+</body>
+</html>
