@@ -1,1 +1,1 @@
-"# Portfolio-Website" 
+I wanted a website to put in my resume showcasing my work from school and any personal projects created on the side
